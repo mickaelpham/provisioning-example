@@ -20,10 +20,24 @@ export const retrieveBySlug = async (slug: string) => {
   return workspace;
 };
 
+export const retrieveByUser = async (userId: string) => {
+  return await database.userWorkspace.findMany({
+    where: { userId },
+    include: { workspace: true },
+  });
+};
+
+export const retrieveMembers = async (workspaceId: string) => {
+  return await database.userWorkspace.findMany({
+    where: { workspaceId },
+    include: { user: true },
+  });
+};
+
 export const create = async (slug: string, name: string, ownerId: string) => {
   return await database.workspace.create({
     data: {
-      id: ulid(),
+      id: `wrk_${ulid()}`,
       name,
       slug,
       users: {

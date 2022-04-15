@@ -13,6 +13,7 @@
     "@prisma/client": "^3.12.0",
     "convict": "^6.2.2",
     "express": "^4.17.3",
+    "express-validator": "^6.14.0",
     "morgan": "^1.10.0",
     "ulid": "^2.3.0"
   },

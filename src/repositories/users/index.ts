@@ -4,7 +4,7 @@ import database from '../../database';
 export const create = async (name: string, email: string) => {
   return await database.user.create({
     data: {
-      id: ulid(),
+      id: `usr_${ulid()}`,
       name,
       email,
     },

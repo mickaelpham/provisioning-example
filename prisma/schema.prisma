@@ -26,9 +26,9 @@ model Workspace {
 }
 
 model UserWorkspace {
-  User        User      @relation(fields: [userId], references: [id])
+  user        User      @relation(fields: [userId], references: [id])
   userId      String
-  Workspace   Workspace @relation(fields: [workspaceId], references: [id])
+  workspace   Workspace @relation(fields: [workspaceId], references: [id])
   workspaceId String
   userRole    UserRole
 
