@@ -30,7 +30,7 @@ router.get('/:id', async (req, res, next) => {
     const user = await retrieve(req.params.id);
     const workspaces = (await retrieveByUser(user.id)).map((w) => ({
       id: w.workspace.id,
-      role: w.userRole.toLowerCase(),
+      role: w.userRole,
       name: w.workspace.name,
       slug: w.workspace.slug,
     }));

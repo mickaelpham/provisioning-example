@@ -19,10 +19,12 @@ model User {
 }
 
 model Workspace {
-  id    String          @id
-  slug  String          @unique
-  name  String
-  users UserWorkspace[]
+  id          String           @id
+  slug        String           @unique
+  name        String
+  users       UserWorkspace[]
+  plan        SubscriptionPlan @default(FREEMIUM)
+  memberships Int?
 }
 
 model UserWorkspace {
@@ -39,4 +41,11 @@ enum UserRole {
   MEMBER
   ADMIN
   OWNER
+}
+
+enum SubscriptionPlan {
+  FREEMIUM
+  TEAM
+  BUSINESS
+  ENTERPRISE
 }

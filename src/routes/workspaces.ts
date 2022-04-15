@@ -1,9 +1,8 @@
 import express from 'express';
-import { body, param, validationResult } from 'express-validator';
+import { body, validationResult } from 'express-validator';
 import {
   create,
   join,
-  retrieve,
   retrieveBySlug,
   retrieveMembers,
 } from '../repositories/workspaces';
@@ -62,7 +61,7 @@ router.get('/:slug', async (req, res, next) => {
       id: u.user.id,
       name: u.user.name,
       email: u.user.email,
-      role: u.userRole.toLowerCase(),
+      role: u.userRole,
     }));
 
     res.json({ ...workspace, members });
