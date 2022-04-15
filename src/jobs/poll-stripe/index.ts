@@ -1,29 +1,31 @@
 import stripe from '../../stripe';
-import database from '../../database';
 import logger from '../../logger';
 import saveToDatabase from './save-to-database';
+import redis from '../../redis';
+
+const REDIS_LAST_EVENT_KEY = 'stripe:poll:lastProcessedEvent';
 
 const pollStripe = async () => {
   // retrieve the last event we inserted
-  const lastEvent = await database.stripeEvent.findFirst({
-    orderBy: [{ created: 'desc' }],
-  });
+  await redis.connect();
+  const lastProcessedEvent = await redis.get(REDIS_LAST_EVENT_KEY);
 
-  logger.info(
-    `last processed Stripe event [externalId=${lastEvent?.externalId}]`
-  );
+  logger.info(`last processed Stripe event [externalId=${lastProcessedEvent}]`);
 
   // use its ID to fetch the next 10 events from Stripe
-  const stripeEvents = await stripe.events.list({
-    starting_after: lastEvent?.externalId,
+  const { data: events } = await stripe.events.list({
+    starting_after: lastProcessedEvent || undefined,
   });
 
-  logger.info(
-    `retrieved events from Stripe [size=${stripeEvents.data.length}]`
-  );
+  logger.info(`retrieved events from Stripe [size=${events.length}]`);
+
+  // update the last event we retrieved
+  if (events.length > 0) {
+    await redis.set(REDIS_LAST_EVENT_KEY, events[events.length - 1].id);
+  }
 
   // save and process each event
-  stripeEvents.data.forEach(saveToDatabase);
+  events.forEach(saveToDatabase);
 };
 
 export default pollStripe;
