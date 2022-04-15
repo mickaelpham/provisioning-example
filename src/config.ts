@@ -19,6 +19,11 @@ const config = convict({
     format: '*',
     env: 'DATABASE_URL',
   },
+  stripeSecretKey: {
+    doc: 'Stripe API Secret Key',
+    default: '',
+    env: 'STRIPE_SECRET_KEY',
+  },
 });
 
 // Perform validation

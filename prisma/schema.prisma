@@ -15,7 +15,7 @@ model User {
   email      String          @unique
   name       String
   workspaces UserWorkspace[]
-
+  billing    BillingProfile?
 }
 
 model Workspace {
@@ -25,6 +25,7 @@ model Workspace {
   users       UserWorkspace[]
   plan        SubscriptionPlan @default(FREEMIUM)
   memberships Int?
+  invoices    Invoice[]
 }
 
 model UserWorkspace {
@@ -48,4 +49,49 @@ enum SubscriptionPlan {
   TEAM
   BUSINESS
   ENTERPRISE
+}
+
+enum Currency {
+  EUR
+  USD
+}
+
+model BillingProfile {
+  externalId     String    @id
+  user           User      @relation(fields: [userId], references: [id])
+  userId         String    @unique
+  currency       Currency  @default(USD)
+  email          String?
+  line1          String?
+  line2          String?
+  city           String?
+  postalCode     String?
+  country        String?
+  invoices       Invoice[]
+  cardExternalId String?   @unique
+  cardBrand      String?
+  cardExpMonth   Int?
+  cardExpYear    Int?
+  cardLast4      String?
+}
+
+model Invoice {
+  externalId        String         @id
+  billing           BillingProfile @relation(fields: [billingId], references: [externalId])
+  billingId         String
+  status            InvoiceStatus
+  amountDueInCents  Int
+  amoundPaidInCents Int
+  currency          Currency       @default(USD)
+  workspace         Workspace      @relation(fields: [workspaceId], references: [id])
+  workspaceId       String
+}
+
+enum InvoiceStatus {
+  DRAFT
+  OPEN
+  PAID
+  UNCOLLECTIBLE
+  VOID
+  FULFILLED
 }
