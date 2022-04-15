@@ -1,11 +1,13 @@
 # Provisioning Example
 
-An example application using a PostgreSQL database to provision an account.
-Illustrate how to leverage Stripe `/v1/events` endpoint to poll and update local
-models, instead of relying on synchronous updates (during the HTTP request) or
-webhooks.
+An example application using a PostgreSQL database to provision an account. It
+illustrates how to leverage Stripe `/v1/events` endpoint to poll and update
+local models, instead of relying on synchronous updates (during the HTTP
+request) or webhooks.
 
 ## Configuration
+
+Make a copy of the `.env.example` file and fill in the blanks.
 
 ```
 cp .env.example .env
@@ -18,13 +20,19 @@ cp .env.example .env
 
 ## Usage
 
+Install the dependencies:
+
+```
+npm install
+```
+
 Start the web server in development mode:
 
 ```
 npm run dev
 ```
 
-Start the CRON job to process events in a separate terminal:
+Start the CRON job to process events in a separate terminal window:
 
 ```
 npm run cron
