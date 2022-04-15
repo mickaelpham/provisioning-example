@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         String          @id
+  email      String          @unique
+  name       String
+  workspaces UserWorkspace[]
+
+}
+
+model Workspace {
+  id    String          @id
+  slug  String          @unique
+  name  String
+  users UserWorkspace[]
+}
+
+model UserWorkspace {
+  User        User      @relation(fields: [userId], references: [id])
+  userId      String
+  Workspace   Workspace @relation(fields: [workspaceId], references: [id])
+  workspaceId String
+  userRole    UserRole
+
+  @@id([userId, workspaceId])
+}
+
+enum UserRole {
+  MEMBER
+  ADMIN
+  OWNER
+}

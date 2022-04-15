@@ -14,10 +14,10 @@ const config = convict({
     env: 'PORT',
     arg: 'port',
   },
-  dbHost: {
+  databaseUrl: {
     doc: 'Database host URL',
     format: '*',
-    env: 'DB_HOST',
+    env: 'DATABASE_URL',
   },
 });
 
