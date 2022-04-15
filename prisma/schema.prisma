@@ -95,3 +95,20 @@ enum InvoiceStatus {
   VOID
   FULFILLED
 }
+
+model StripeEvent {
+  externalId  String            @id
+  type        String
+  created     DateTime
+  apiVersion  String?
+  status      StripeEventStatus
+  processedAt DateTime?
+
+  @@index(created)
+}
+
+enum StripeEventStatus {
+  PENDING
+  PROCESSED
+  SKIPPED
+}

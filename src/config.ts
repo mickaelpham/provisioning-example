@@ -24,6 +24,11 @@ const config = convict({
     default: '',
     env: 'STRIPE_SECRET_KEY',
   },
+  stripePollInterval: {
+    doc: 'How often do we poll Stripe for new events, in seconds',
+    default: 30,
+    env: 'SRIPE_POLL_INTERVAL',
+  },
 });
 
 // Perform validation

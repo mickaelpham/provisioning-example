@@ -1,4 +1,5 @@
 import { PrismaClient } from '@prisma/client';
+import logger from './logger';
 
 const database = new PrismaClient({
   log: [
@@ -21,10 +22,10 @@ const database = new PrismaClient({
   ],
 });
 
-database.$on('query', (e) => {
-  console.log('Query: ' + e.query);
-  console.log('Params: ' + e.params);
-  console.log('Duration: ' + e.duration + 'ms');
+database.$on('query', ({ query, params, duration }) => {
+  logger.debug(
+    `query: ${query} | params: ${params} | duration: ${duration} ms`
+  );
 });
 
 export default database;

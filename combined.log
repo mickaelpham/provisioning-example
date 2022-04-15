@@ -1,0 +1,252 @@
+{"level":"info","message":"the time is Fri Apr 15 2022 21:44:00 GMT+0200 (Central European Summer Time)","service":"provisioning-example"}
+{"level":"info","message":"last processed Stripe event [externalId=undefined]"}
+{"level":"info","message":"last processed Stripe event [externalId=undefined]"}
+{"level":"info","message":"retrieved events from Stripe [size=10]"}
+{"level":"info","message":"last processed Stripe event [externalId=undefined]"}
+{"level":"info","message":"retrieved events from Stripe [size=10]"}
+{"level":"info","message":"last processed Stripe event [externalId=undefined]"}
+{"level":"info","message":"retrieved events from Stripe [size=10]"}
+{"level":"info","message":"last processed Stripe event [externalId=evt_1KouWwEXBGauwvlf0jhtUvsg]"}
+{"level":"info","message":"retrieved events from Stripe [size=10]"}
+{"level":"info","message":{"duration":3,"params":"[1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE 1=1 ORDER BY \"public\".\"StripeEvent\".\"created\" DESC LIMIT $1 OFFSET $2"}}
+{"level":"info","message":"last processed Stripe event [externalId=undefined]"}
+{"level":"info","message":"retrieved events from Stripe [size=10]"}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KouWwEXBGauwvlf0jhtUvsg\",\"setup_intent.created\",2022-04-15 19:10:06 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KouWwEXBGauwvlf0jhtUvsg\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":3,"params":"[\"evt_1KonoxEXBGauwvlfvigofOuP\",\"setup_intent.succeeded\",2022-04-15 12:00:15 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonoxEXBGauwvlfvigofOuP\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":3,"params":"[\"evt_1KonowEXBGauwvlfxTR4TdRh\",\"customer.source.created\",2022-04-15 12:00:14 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfTLDI1b8C\",\"payment_method.attached\",2022-04-15 12:00:14 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfxTR4TdRh\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfTLDI1b8C\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":1,"params":"[\"evt_1KouWwEXBGauwvlf0jhtUvsg\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":2,"params":"[\"SKIPPED\",\"evt_1KouWwEXBGauwvlf0jhtUvsg\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KouWwEXBGauwvlf0jhtUvsg\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":3,"params":"[\"evt_1KonowEXBGauwvlfupiQZAGE\",\"customer.updated\",2022-04-15 12:00:14 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfupiQZAGE\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":1,"params":"[\"evt_1KonowEXBGauwvlfxTR4TdRh\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonoxEXBGauwvlf924kI4Oj\",\"setup_intent.created\",2022-04-15 12:00:14 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonmkEXBGauwvlfAjhNonEQ\",\"customer.updated\",2022-04-15 11:57:58 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Komb8EXBGauwvlfLsFaWTwD\",\"setup_intent.created\",2022-04-15 10:41:54 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonoxEXBGauwvlf924kI4Oj\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":3,"params":"[\"SKIPPED\",\"evt_1KonowEXBGauwvlfxTR4TdRh\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonmkEXBGauwvlfAjhNonEQ\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Komb8EXBGauwvlfLsFaWTwD\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfxTR4TdRh\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":2,"params":"[\"evt_1KonowEXBGauwvlfTLDI1b8C\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":2,"params":"[\"PROCESSED\",\"evt_1KonowEXBGauwvlfTLDI1b8C\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfTLDI1b8C\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":3,"params":"[\"evt_1Koni0EXBGauwvlfSH6ZZLpa\",\"customer.created\",2022-04-15 11:53:03 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Komb8EXBGauwvlfLsFaWTwD\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":1,"params":"[\"evt_1Koni0EXBGauwvlfSH6ZZLpa\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonmkEXBGauwvlfAjhNonEQ\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfupiQZAGE\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KomEDEXBGauwvlfeHy8mabr\",\"setup_intent.created\",2022-04-15 10:18:13 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[\"SKIPPED\",\"evt_1Komb8EXBGauwvlfLsFaWTwD\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonoxEXBGauwvlfvigofOuP\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[\"PROCESSED\",\"evt_1KonowEXBGauwvlfupiQZAGE\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[\"PROCESSED\",\"evt_1KonmkEXBGauwvlfAjhNonEQ\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KomEDEXBGauwvlfeHy8mabr\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Komb8EXBGauwvlfLsFaWTwD\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":1,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonmkEXBGauwvlfAjhNonEQ\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfupiQZAGE\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[\"SKIPPED\",\"evt_1KonoxEXBGauwvlfvigofOuP\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonoxEXBGauwvlfvigofOuP\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":2,"params":"[\"evt_1KonoxEXBGauwvlf924kI4Oj\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":3,"params":"[\"SKIPPED\",\"evt_1KonoxEXBGauwvlf924kI4Oj\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonoxEXBGauwvlf924kI4Oj\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Koni0EXBGauwvlfSH6ZZLpa\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[\"PROCESSED\",\"evt_1Koni0EXBGauwvlfSH6ZZLpa\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Koni0EXBGauwvlfSH6ZZLpa\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KomEDEXBGauwvlfeHy8mabr\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[\"SKIPPED\",\"evt_1KomEDEXBGauwvlfeHy8mabr\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KomEDEXBGauwvlfeHy8mabr\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":3,"params":"[1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE 1=1 ORDER BY \"public\".\"StripeEvent\".\"created\" DESC LIMIT $1 OFFSET $2"}}
+{"level":"info","message":"last processed Stripe event [externalId=undefined]"}
+{"level":"info","message":"retrieved events from Stripe [size=10]"}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KouWwEXBGauwvlf0jhtUvsg\",\"setup_intent.created\",2022-04-15 19:10:06 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KouWwEXBGauwvlf0jhtUvsg\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":3,"params":"[\"evt_1KonoxEXBGauwvlfvigofOuP\",\"setup_intent.succeeded\",2022-04-15 12:00:15 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonoxEXBGauwvlfvigofOuP\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":3,"params":"[\"evt_1KonoxEXBGauwvlf924kI4Oj\",\"setup_intent.created\",2022-04-15 12:00:14 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonoxEXBGauwvlf924kI4Oj\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfxTR4TdRh\",\"customer.source.created\",2022-04-15 12:00:14 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfxTR4TdRh\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":1,"params":"[\"evt_1KouWwEXBGauwvlf0jhtUvsg\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":2,"params":"[\"SKIPPED\",\"evt_1KouWwEXBGauwvlf0jhtUvsg\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KouWwEXBGauwvlf0jhtUvsg\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":2,"params":"[\"evt_1KonowEXBGauwvlfTLDI1b8C\",\"payment_method.attached\",2022-04-15 12:00:14 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KomEDEXBGauwvlfeHy8mabr\",\"setup_intent.created\",2022-04-15 10:18:13 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Komb8EXBGauwvlfLsFaWTwD\",\"setup_intent.created\",2022-04-15 10:41:54 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":1,"params":"[\"evt_1KonowEXBGauwvlfTLDI1b8C\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KomEDEXBGauwvlfeHy8mabr\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Komb8EXBGauwvlfLsFaWTwD\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Koni0EXBGauwvlfSH6ZZLpa\",\"customer.created\",2022-04-15 11:53:03 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Koni0EXBGauwvlfSH6ZZLpa\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":1,"params":"[\"evt_1KonoxEXBGauwvlf924kI4Oj\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":2,"params":"[\"SKIPPED\",\"evt_1KonoxEXBGauwvlf924kI4Oj\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonmkEXBGauwvlfAjhNonEQ\",\"customer.updated\",2022-04-15 11:57:58 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonoxEXBGauwvlfvigofOuP\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfxTR4TdRh\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonmkEXBGauwvlfAjhNonEQ\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonoxEXBGauwvlf924kI4Oj\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"SKIPPED\",\"evt_1KonowEXBGauwvlfxTR4TdRh\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[\"SKIPPED\",\"evt_1KonoxEXBGauwvlfvigofOuP\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfxTR4TdRh\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonoxEXBGauwvlfvigofOuP\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":3,"params":"[\"evt_1KonowEXBGauwvlfupiQZAGE\",\"customer.updated\",2022-04-15 12:00:14 UTC,\"2020-08-27\",\"PENDING\"]","query":"INSERT INTO \"public\".\"StripeEvent\" (\"externalId\",\"type\",\"created\",\"apiVersion\",\"status\") VALUES ($1,$2,$3,$4,$5) RETURNING \"public\".\"StripeEvent\".\"externalId\""}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfupiQZAGE\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfTLDI1b8C\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[\"PROCESSED\",2022-04-15 20:25:01.596 UTC,\"evt_1KonowEXBGauwvlfTLDI1b8C\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1, \"processedAt\" = $2 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($3)"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfTLDI1b8C\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfupiQZAGE\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[\"PROCESSED\",2022-04-15 20:25:01.597 UTC,\"evt_1KonowEXBGauwvlfupiQZAGE\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1, \"processedAt\" = $2 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($3)"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonowEXBGauwvlfupiQZAGE\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonmkEXBGauwvlfAjhNonEQ\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[\"PROCESSED\",2022-04-15 20:25:01.598 UTC,\"evt_1KonmkEXBGauwvlfAjhNonEQ\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1, \"processedAt\" = $2 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($3)"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KonmkEXBGauwvlfAjhNonEQ\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Koni0EXBGauwvlfSH6ZZLpa\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[\"PROCESSED\",2022-04-15 20:25:01.599 UTC,\"evt_1Koni0EXBGauwvlfSH6ZZLpa\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1, \"processedAt\" = $2 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($3)"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Koni0EXBGauwvlfSH6ZZLpa\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Komb8EXBGauwvlfLsFaWTwD\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[\"SKIPPED\",\"evt_1Komb8EXBGauwvlfLsFaWTwD\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1Komb8EXBGauwvlfLsFaWTwD\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KomEDEXBGauwvlfeHy8mabr\"]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1"}}
+{"level":"info","message":{"duration":0,"params":"[\"SKIPPED\",\"evt_1KomEDEXBGauwvlfeHy8mabr\"]","query":"UPDATE \"public\".\"StripeEvent\" SET \"status\" = $1 WHERE \"public\".\"StripeEvent\".\"externalId\" IN ($2)"}}
+{"level":"info","message":{"duration":0,"params":"[\"evt_1KomEDEXBGauwvlfeHy8mabr\",1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE \"public\".\"StripeEvent\".\"externalId\" = $1 LIMIT $2 OFFSET $3"}}
+{"level":"info","message":{"duration":4,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":2,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":3,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":2,"params":"[]","query":"COMMIT"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"SELECT 1"}}
+{"level":"info","message":{"duration":0,"params":"[1,0]","query":"SELECT \"public\".\"StripeEvent\".\"externalId\", \"public\".\"StripeEvent\".\"type\", \"public\".\"StripeEvent\".\"created\", \"public\".\"StripeEvent\".\"apiVersion\", \"public\".\"StripeEvent\".\"status\", \"public\".\"StripeEvent\".\"processedAt\" FROM \"public\".\"StripeEvent\" WHERE 1=1 ORDER BY \"public\".\"StripeEvent\".\"created\" DESC LIMIT $1 OFFSET $2"}}
+{"level":"info","message":"last processed Stripe event [externalId=evt_1KouWwEXBGauwvlf0jhtUvsg]"}
+{"level":"info","message":"retrieved events from Stripe [size=10]"}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"SELECT 1"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"BEGIN"}}
+{"level":"info","message":{"duration":0,"params":"[]","query":"SELECT 1"}}
+{"level":"info","message":"last processed Stripe event [externalId=undefined]"}
+{"level":"info","message":"retrieved events from Stripe [size=10]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KouWwEXBGauwvlf0jhtUvsg]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonoxEXBGauwvlfvigofOuP]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonoxEXBGauwvlf924kI4Oj]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonowEXBGauwvlfxTR4TdRh]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonowEXBGauwvlfTLDI1b8C]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonowEXBGauwvlfupiQZAGE]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonmkEXBGauwvlfAjhNonEQ]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1Koni0EXBGauwvlfSH6ZZLpa]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1Komb8EXBGauwvlfLsFaWTwD]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KomEDEXBGauwvlfeHy8mabr]"}
+{"level":"info","message":"last processed Stripe event [externalId=evt_1KouWwEXBGauwvlf0jhtUvsg]"}
+{"level":"info","message":"retrieved events from Stripe [size=10]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonoxEXBGauwvlfvigofOuP]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonoxEXBGauwvlf924kI4Oj]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonowEXBGauwvlfxTR4TdRh]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonowEXBGauwvlfTLDI1b8C]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonowEXBGauwvlfupiQZAGE]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonmkEXBGauwvlfAjhNonEQ]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1Koni0EXBGauwvlfSH6ZZLpa]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1Komb8EXBGauwvlfLsFaWTwD]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KomEDEXBGauwvlfeHy8mabr]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1Kocz9EXBGauwvlfTjLII1O6]"}
+{"level":"info","message":"last processed Stripe event [externalId=undefined]"}
+{"level":"info","message":"retrieved events from Stripe [size=10]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KouWwEXBGauwvlf0jhtUvsg]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonoxEXBGauwvlfvigofOuP]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonoxEXBGauwvlf924kI4Oj]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonowEXBGauwvlfxTR4TdRh]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonowEXBGauwvlfTLDI1b8C]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonowEXBGauwvlfupiQZAGE]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonmkEXBGauwvlfAjhNonEQ]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1Koni0EXBGauwvlfSH6ZZLpa]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1Komb8EXBGauwvlfLsFaWTwD]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KomEDEXBGauwvlfeHy8mabr]"}
+{"level":"info","message":"last processed Stripe event [externalId=evt_1KouWwEXBGauwvlf0jhtUvsg]"}
+{"level":"info","message":"retrieved events from Stripe [size=10]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonoxEXBGauwvlfvigofOuP]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonoxEXBGauwvlf924kI4Oj]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonowEXBGauwvlfxTR4TdRh]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonowEXBGauwvlfTLDI1b8C]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonowEXBGauwvlfupiQZAGE]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KonmkEXBGauwvlfAjhNonEQ]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1Koni0EXBGauwvlfSH6ZZLpa]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1Komb8EXBGauwvlfLsFaWTwD]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1KomEDEXBGauwvlfeHy8mabr]"}
+{"level":"info","message":"about to save event to database [externalId=evt_1Kocz9EXBGauwvlfTjLII1O6]"}
