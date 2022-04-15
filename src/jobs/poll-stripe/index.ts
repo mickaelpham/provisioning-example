@@ -7,7 +7,6 @@ const REDIS_LAST_EVENT_KEY = 'stripe:poll:lastProcessedEvent';
 
 const pollStripe = async () => {
   // retrieve the last event we inserted
-  await redis.connect();
   const lastProcessedEvent = await redis.get(REDIS_LAST_EVENT_KEY);
 
   logger.info(`last processed Stripe event [externalId=${lastProcessedEvent}]`);
