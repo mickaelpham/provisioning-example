@@ -26,8 +26,8 @@ const config = convict({
   },
   stripePollInterval: {
     doc: 'How often do we poll Stripe for new events, in seconds',
-    default: 30,
-    env: 'SRIPE_POLL_INTERVAL',
+    default: 10,
+    env: 'STRIPE_POLL_INTERVAL',
   },
 });
 
